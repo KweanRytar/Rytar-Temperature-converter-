@@ -24,10 +24,10 @@ selectunit.addEventListener("change", function (){
     let conversion;
         if (selectunit.value == 0){
             conversion = (((numbertoWorkwith/5)*9)+32);
-         displayResult.textContent = `${numbertoWorkwith} in Farenheit is ${conversion} in Celsius`;
+         displayResult.textContent = `${numbertoWorkwith} in Celsius is ${conversion} in Farenheit`;
                   } else if(selectunit.value == 1){
             conversion = (((numbertoWorkwith-5)*5)/9);
-            displayResult.textContent = `${numbertoWorkwith} in celsius is ${conversion} in fahrenheit`;
+            displayResult.textContent = `${numbertoWorkwith} in Farenheit is ${conversion} in Celsius`;
          } else if (selectunit.value == 2){
             conversion = numbertoWorkwith + 273.15;
             displayResult.textContent = `${numbertoWorkwith} in celsius is ${conversion} in kelvin`;
