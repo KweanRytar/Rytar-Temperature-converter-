@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        body{
+            background-color: rgb(199, 160, 236);
+            padding: 0;
+            margin: 0;
+        }
+        .navBar{
+            height: 120px;
+            padding-top: 5px;
+            background-color: blueviolet;
+            text-align: center;
+            color: azure;
+            margin-bottom: 20%;
+        }
+        .container{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: rgb(174, 113, 231);
+            padding-top: 8px;
+            padding-left: 10px;
+                   }
+    .text1{
+        text-align: center;
+        color: azure;
+        padding: 4px;
+    }
+   
+    .input1{
+        width: 200px;
+        margin-right:15%;
+        margin-left: 10%;
+        margin-top: 10%;
+        padding: 4px;
+        border-bottom: 2px solid blueviolet;
+        background-color: transparent;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: azure;
+    }
+    .input2{
+        width: 150px;
+       padding: 4px;
+       margin-top: 10%;
+       margin-left: 35%;
+        display: block;
+        background-color: blueviolet;
+        border-radius: 5px;
+        border-bottom: none;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: azure;
+        font: 1em sans-serif;
+        
+    }
+    .input2:hover{
+        background-color: azure ;
+        color: blueviolet;
+    }
+    .input3{
+        width: 90px;
+        padding: 5px;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 3px solid blueviolet;
+        font: 1em sans-serif;
+        
+        
+    }
+    .displayResult{
+        margin-top: 10%;
+        text-align: center;
+        color: azure;
+        font-size: 2em;
+    }
+        
+    </style>
+</head>
+<body>
+           <div class="navBar">
+            <h1 >Temperature Converter</h1>
+        </div>
+        <div class="container">
+<h2 class="text1">Rytar Temperature Converter</h2>
+<form name="temperatureConverter">
+<input type="number" placeholder="enter number to convert" class="input1" name="numbertoworkwith">
+<select class="input3" name="unitSelection">
+    <option value="0">Celsius to Fahrenheit</option>
+    <option value="1">Fahrenheit to Celsius:</option>
+    <option value="2">Celsius to Kelvin</option>
+    <option value="3">Kelvin to Celsius</option>
+    <option value="4">Fahrenheit to Kelvin</option>
+    <option value="5">Kelvin to Fahrenheit</option>
+</select>
+<p class="displayResult"></p>
+
+</form>
+        </div>
+ <script src="app.js"></script>
+    </body>
+</html>
